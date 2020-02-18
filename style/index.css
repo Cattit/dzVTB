@@ -1,0 +1,21 @@
+
+#root{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #F0E68C;
+    width: 300px;
+    margin: 10px 10px 10px 0;
+    padding: 10px;
+}
+img{
+    max-width: 300px;
+}
+a{
+    display: block;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    overflow-wrap: break-word;
+}
