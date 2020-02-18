@@ -40,31 +40,6 @@ form.onsubmit = function () {
 
     addCard(masCards[masCards.length - 1], masCards.length - 1);
 
-    // masCards.forEach(elem => {  // формируем карточку
-    //     let cardElem = document.createElement('div');
-    //     cardElem.classList.add('card');
-
-    //     let nameElem = document.createElement('p');
-    //     let descrElem = document.createElement('p');
-    //     let imgElem = document.createElement('img');
-    //     let sourceElem = document.createElement('a');
-    //     let button = document.createElement('button');
-    //     nameElem.innerText = elem.name;
-    //     descrElem.innerText = elem.description;
-    //     imgElem.setAttribute('src', elem.img);
-    //     sourceElem.innerText = elem.source;
-    //     sourceElem.setAttribute('href', elem.source);
-    //     button.innerText = "Удалить";
-    //     button.setAttribute('type', 'submit');
-    //     button.setAttribute('onclick', 'deleteOneCard()');
-
-    //     cardElem.appendChild(nameElem);
-    //     cardElem.appendChild(descrElem);
-    //     cardElem.appendChild(imgElem);
-    //     cardElem.appendChild(sourceElem);
-    //     cardElem.appendChild(button);
-    //     root.appendChild(cardElem);
-    // })
     return false;
 }
 
@@ -77,6 +52,4 @@ function deleteOneCard(card) {
     masCards.splice(card.id, 1);
     root.innerHTML = "";
     masCards.forEach((elem, index) => addCard(elem, index));
-    // console.log(card)
-    // console.log(card.id);
 }
